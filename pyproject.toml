@@ -1,0 +1,25 @@
+[tool.poetry]
+name = "project"
+version = "0.1.0"
+description = ""
+authors = ["Author <author@gmail.com>"]
+readme = "README.md"
+packages = [{include = "project"}]
+
+[tool.poetry.dependencies]
+python = "^3.10"
+
+[tool.poetry.group.test.dependencies]
+pytest = "7.2.0"
+coverage = "6.5.0"
+
+[tool.poetry.group.linters.dependencies]
+flake8 = "6.0.0"
+flake8-isort = "5.0.3"
+black = "22.10.0"
+mypy = "0.982"
+pre-commit = "2.20.0"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
